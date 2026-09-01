@@ -1,0 +1,2 @@
+import {Shell,PageTitle} from '@/components/site-shell';
+export default function Contact(){return <Shell><div className="content"><PageTitle title="Contact"/><div className="contact-grid"><section><h2>Tyndall Power Electronics Laboratory</h2><p>Tyndall National Institute<br/>Lee Maltings<br/>Dyke Parade<br/>Cork, Ireland</p></section><section><h2>Group lead</h2><p>Dr Yi Dou<br/>Senior Researcher</p><a href="mailto:yi.dou@tyndall.ie">yi.dou@tyndall.ie</a></section></div></div></Shell>}

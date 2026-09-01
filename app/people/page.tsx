@@ -1,0 +1,2 @@
+import {Shell,PageTitle} from '@/components/site-shell';
+export default function People(){return <Shell><div className="content"><PageTitle title="People"/><div className="person"><div className="person-photo"/><div><h2>Dr Yi Dou</h2><p className="meta">Senior Researcher · Group Lead</p><p>Dr Yi Dou leads the Tyndall Power Electronics Laboratory at Tyndall National Institute.</p><a href="mailto:yi.dou@tyndall.ie">yi.dou@tyndall.ie</a></div></div><h2>Group members</h2><p>Researcher and student profiles will be added here as the laboratory develops.</p></div></Shell>}

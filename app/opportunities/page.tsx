@@ -1,0 +1,2 @@
+import {Shell,PageTitle} from '@/components/site-shell';
+export default function Opportunities(){return <Shell><div className="content"><PageTitle title="Student projects and opportunities"/><p>Information on open research positions, postgraduate projects and thesis topics will be published here when available.</p><h2>Enquiries</h2><p>Prospective students and researchers may contact Dr Yi Dou with a curriculum vitae and a short description of their research interests.</p><a className="document-link" href="mailto:yi.dou@tyndall.ie">Contact Dr Yi Dou</a></div></Shell>}
