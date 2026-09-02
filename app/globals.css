@@ -30,7 +30,7 @@ nav a:hover,nav a:focus-visible{background:#eeeeeb;border-color:transparent;outl
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .institution{border-bottom:0}
 header{border-bottom:1px solid #e3e4e8}
-nav a:hover,nav a:focus-visible{color:var(--accent);background:transparent}
+nav a:hover,nav a:focus-visible{color:var(--accent);background:var(--cloud-white)}
 .cover,.person-photo{filter:none}
 .home-links section{position:relative}
 .home-links section::before{content:"";position:absolute;top:-1px;left:0;width:42px;height:2px;background:#111}
