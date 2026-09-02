@@ -25,12 +25,12 @@ nav a:hover,nav a:focus-visible{background:#eeeeeb;border-color:transparent;outl
 }
 
 /* Restrained editorial system informed by the Tyndall brand guidance. */
-:root{--accent:#111;--cloud-white:#f4f4f2}
+:root{--accent:#00a6ce;--cloud-white:#f4f4f2}
 ::selection{color:#fff;background:var(--accent)}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .institution{border-bottom:0}
 header{border-bottom:1px solid #e3e4e8}
-nav a:hover,nav a:focus-visible{color:#111;background:var(--cloud-white)}
+nav a:hover,nav a:focus-visible{color:var(--accent);background:transparent}
 .cover,.person-photo{filter:none}
 .home-links section{position:relative}
 .home-links section::before{content:"";position:absolute;top:-1px;left:0;width:42px;height:2px;background:#111}
@@ -49,3 +49,32 @@ nav a:hover,nav a:focus-visible{color:#111;background:var(--cloud-white)}
 .founding-partners a:first-child img{height:52px}
 .founding-partners a:last-child img{height:54px}
 @media(max-width:600px){.brand-signoff{align-items:flex-start;gap:26px;padding-top:30px}.brand-primary img{height:30px}.founding-partners{padding:0}.founding-partners>div{gap:16px;align-items:center}.founding-partners a:first-child img{height:38px}.founding-partners a:last-child img{height:40px}.founding-partners>span{margin-bottom:10px}}
+
+/* Academic information structure and Tyndall interaction colour. */
+.institution{justify-content:flex-start}
+.wordmark{max-width:none;white-space:nowrap}
+.indexed section{grid-template-columns:72px minmax(0,1fr);align-items:baseline}
+.indexed span{display:block;padding-top:2px;font-variant-numeric:tabular-nums}
+.application-list{border-top:1px solid #111}
+.application-list p{display:grid;grid-template-columns:minmax(190px,260px) 1fr;gap:28px;margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+.application-list strong{font-weight:500}
+.application-list span{color:#444}
+.project-list{border-top:1px solid #111}
+.project-list article{padding:18px 0;border-bottom:1px solid var(--line)}
+.project-list h3{font-size:19px;font-weight:500;margin:0 0 4px}
+.project-list p{margin:0;color:#444}
+.year-menu{display:flex;gap:10px;margin:0 0 38px;padding:0;border:0}
+.year-menu a{padding:5px 10px;border:1px solid var(--line)}
+.year-menu a:hover,.year-menu a:focus-visible{color:#fff;background:var(--accent);border-color:var(--accent)}
+.publication-year{scroll-margin-top:24px}
+.publication-year>h2{margin:42px 0 12px}
+.publication-list article{grid-template-columns:72px minmax(0,1fr);align-items:baseline}
+.publication-list h3{font-size:19px;line-height:1.4;font-weight:500;margin:0}
+.member-grid article>p:nth-of-type(2){margin-bottom:4px}
+.vacancy-list{border-top:1px solid #111}
+.vacancy-list article{padding:22px 0;border-bottom:1px solid var(--line)}
+.vacancy-list h2{font-size:20px;margin:0 0 4px}
+.vacancy-list p{margin:0;color:var(--grey)}
+.source-note{font-size:14px!important;color:var(--grey)}
+@media(max-width:900px){.wordmark span{max-width:none}.indexed section,.publication-list article{grid-template-columns:52px minmax(0,1fr)}}
+@media(max-width:600px){.wordmark span{font-size:14px}.application-list p{display:block}.application-list span{display:block;margin-top:3px}.indexed section,.publication-list article{grid-template-columns:42px minmax(0,1fr);gap:12px}.year-menu{gap:6px}.year-menu a{font-size:14px;padding:4px 8px}}
