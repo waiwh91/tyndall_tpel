@@ -157,3 +157,8 @@ footer .institution-address{margin-top:20px}
 .publication-authors{font-size:15px;line-height:1.7;margin:12px 0 8px}
 .publication-venue{font-size:15px;color:var(--grey);margin:0}
 @media(max-width:600px){.brand-signoff{gap:16px}.brand-signoff .brand-primary img{height:auto;width:140px}.founding-partners>div{gap:12px}.founding-partners a:first-child img{height:30px}.founding-partners a:last-child img{height:32px}}
+
+/* Clip the UCC asset’s unused right margin while retaining its native scale. */
+.founding-partners a:last-child{--ucc-height:54px;width:calc(var(--ucc-height) * 3.12);overflow:hidden;flex:none}
+.founding-partners a:last-child img{height:var(--ucc-height);width:auto;max-width:none;flex:none}
+@media(max-width:600px){.founding-partners a:last-child{--ucc-height:32px}}
