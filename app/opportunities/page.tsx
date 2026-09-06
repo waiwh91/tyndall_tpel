@@ -1,2 +1,2 @@
-import {Shell,PageTitle} from '@/components/site-shell';
-export default function Opportunities(){return <Shell><div className="content"><PageTitle title="Opportunities"/><p>There are currently no advertised positions within the Tyndall Power Electronics Research Team.</p><h2>Research enquiries</h2><p>Prospective students and researchers interested in power electronics may contact Yi Dou with a curriculum vitae and a short description of their research interests.</p><a className="document-link" href="mailto:yi.dou@tyndall.ie">Contact Yi Dou</a></div></Shell>}
+import {LocalizedPage} from '@/components/localized-page';
+export default function Page(){return <LocalizedPage page='opportunities'/>;}

@@ -1,2 +1,2 @@
-import {Shell,PageTitle} from '@/components/site-shell';
-export default function Contact(){return <Shell><div className="content"><PageTitle title="Contact"/><div className="contact-grid"><section><h2>Tyndall Power Electronics Research Team</h2><p>Integrated Power and Energy Systems Research Programme<br/>Tyndall National Institute<br/>Lee Maltings<br/>Dyke Parade<br/>Cork, Ireland</p></section><section><h2>Contact</h2><p>Yi Dou<br/>Senior Researcher, Ph.D</p><a href="mailto:yi.dou@tyndall.ie">yi.dou@tyndall.ie</a></section></div></div></Shell>}
+import {LocalizedPage} from '@/components/localized-page';
+export default function Page(){return <LocalizedPage page='contact'/>;}
