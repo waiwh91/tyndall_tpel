@@ -134,3 +134,7 @@ header nav{flex-wrap:wrap;gap:8px 16px}
 .profile-body p{margin:0 0 20px}
 @media(max-width:600px){.member-row{column-gap:16px;padding:20px 0}.member-row h3{flex:1 1 180px;font-size:19px}.member-focus{order:3;flex-basis:100%;max-width:none}.member-linkedin{flex:none}.profile-body{flex-direction:column;gap:28px}.profile-portrait{width:180px;height:180px}.member-profile .page-title h1{font-size:30px}}
 .profile-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:28px;font-size:14px}
+
+/* Institutional identity above its founding partners. */
+.brand-signoff{flex-direction:column;align-items:flex-start;gap:28px}
+@media(max-width:600px){.brand-signoff{gap:24px}}
