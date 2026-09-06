@@ -1,7 +1,7 @@
 import {mkdirSync,writeFileSync,readFileSync,rmSync,cpSync,readdirSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {renderSite,languages,routes,pageUrl,translate,pageTitle} from '../lib/site-renderer.mjs';
-const out=resolve('gh-pages-output'),base='/tyndall_tpel',stylesheet='site-v22.css';
+const out=resolve('gh-pages-output'),base='/tyndall_tpel',stylesheet='site-v23.css';
 if(out!==resolve(process.cwd(),'gh-pages-output'))throw new Error('Unexpected export directory');
 rmSync(out,{recursive:true,force:true});mkdirSync(out,{recursive:true});
 for(const folder of ['brands','people']){mkdirSync(`${out}/${folder}`,{recursive:true});for(const file of readdirSync(`public/${folder}`)){if(!file.includes('-TNI-'))cpSync(`public/${folder}/${file}`,`${out}/${folder}/${file}`);}}
