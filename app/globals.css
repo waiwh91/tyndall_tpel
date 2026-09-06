@@ -98,3 +98,15 @@ header nav{flex-wrap:wrap;gap:8px 16px}
 @media(min-width:901px){header{height:auto;min-height:132px;flex-wrap:wrap;row-gap:16px;padding-top:24px;padding-bottom:24px}[dir=rtl] .content,[dir=rtl] .home-copy,[dir=rtl] .home-links{margin-right:max(24px,calc((100vw - 1180px)/2));margin-left:0;padding-right:0;padding-left:24px}[dir=rtl] header{padding-right:max(24px,calc((100vw - 1180px)/2));padding-left:24px}[dir=rtl] .cover{margin-right:max(24px,calc((100vw - 1180px)/2));margin-left:0}}
 @media(max-width:900px){[dir=rtl] .content,[dir=rtl] .home-copy,[dir=rtl] .home-links,[dir=rtl] .cover{margin-right:24px;margin-left:0;padding-right:0;padding-left:24px}}
 @media(max-width:600px){.institution{gap:6px}.institution .language-switcher{gap:14px}.language-switcher a{font-size:12px}.member-photo{max-width:400px}.wordmark span{font-size:17px;line-height:1.4}}
+
+/* Text dropdown for the current page language; works without JavaScript. */
+.language-dropdown{position:relative;margin-left:auto;font-size:13px;z-index:20}
+.language-dropdown summary{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:3px 0;color:#fff}
+.language-dropdown summary::-webkit-details-marker{display:none}
+.language-dropdown summary:focus-visible{outline:1px solid #fff;outline-offset:4px}
+.language-dropdown summary span{font-size:16px;line-height:1}
+.language-dropdown[open] summary span{transform:rotate(180deg)}
+.language-options{position:absolute;right:0;top:calc(100% + 8px);min-width:150px;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:6px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 18px #0002}
+.institution .language-options a{display:block;padding:9px 12px;color:#111;font-size:14px;font-weight:400;text-decoration:none;white-space:nowrap}
+.institution .language-options a:hover,.institution .language-options a:focus-visible{color:var(--accent);background:var(--paper);outline:1px solid var(--accent);outline-offset:-1px}
+.institution .language-options a[aria-current]{font-weight:600;text-decoration:underline;text-underline-offset:4px}
