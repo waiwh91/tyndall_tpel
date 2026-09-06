@@ -13,7 +13,7 @@ for(const [lang] of languages)for(const page of routes){
    assert(existsSync(`gh-pages-output${local}${local.endsWith('/')?'index.html':''}`),`Broken link: ${match[1]}`);
  }
  if(page==='people'){
-   const directory=html.split('<div class="member-list">')[1].split('<h2>'+translate('Advisor',lang))[0];
+   const directory=html.split('<div class="member-list">')[1].split('<h2>'+translate('Director',lang))[0];
    assert(!directory.includes('<img'), 'Directory must not contain portraits');
    assert(!directory.includes('member-grid'));
    for(const m of teamMembers){assert(directory.includes(pageUrl('people/'+m.slug,lang,base)));assert(directory.includes(m.linkedin));}
