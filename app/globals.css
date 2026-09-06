@@ -113,3 +113,24 @@ header nav{flex-wrap:wrap;gap:8px 16px}
 .language-dropdown summary .language-caret{display:block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;opacity:.75;margin-top:2px}
 .language-dropdown summary .language-caret-icon{display:block;flex:none;opacity:.75}
 .language-dropdown[open] summary .language-caret-icon{transform:rotate(180deg)}
+
+/* People: a compact editorial directory, subordinate to the lead profile. */
+.member-list{border-top:1px solid var(--black)}
+.member-row{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:32px;row-gap:10px;padding:22px 0;border-bottom:1px solid var(--line)}
+.member-row h3{flex:0 0 220px;font-size:20px;line-height:1.4;font-weight:500;margin:0}
+.member-row h3 a{text-decoration:none;text-underline-offset:5px}
+.member-row h3 a:hover,.member-row h3 a:focus-visible{color:var(--accent);text-decoration:underline}
+.member-focus{flex:1 1 230px;max-width:430px}
+.member-focus p{margin:0;color:#555;font-size:15px;line-height:1.6}
+.member-focus .focus-label{font-size:12px;letter-spacing:.04em;margin-bottom:4px;color:var(--grey)}
+.member-linkedin{margin-inline-start:auto;font-size:14px}
+.member-profile .back-link{display:inline-block;margin-bottom:30px;font-size:14px}
+.member-profile .page-title h1{font-size:36px;margin-bottom:12px}
+.profile-body{display:flex;align-items:flex-start;gap:36px}
+.profile-portrait{width:200px;height:200px;object-fit:cover;flex:none}
+.profile-body>div{flex:1;min-width:0}
+.profile-body h2{font-size:22px;margin:28px 0 12px}
+.profile-body h2:first-child{margin-top:0}
+.profile-body p{margin:0 0 20px}
+@media(max-width:600px){.member-row{column-gap:16px;padding:20px 0}.member-row h3{flex:1 1 180px;font-size:19px}.member-focus{order:3;flex-basis:100%;max-width:none}.member-linkedin{flex:none}.profile-body{flex-direction:column;gap:28px}.profile-portrait{width:180px;height:180px}.member-profile .page-title h1{font-size:30px}}
+.profile-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:28px;font-size:14px}
