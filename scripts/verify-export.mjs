@@ -13,13 +13,13 @@ for(const [lang] of languages)for(const page of routes){
    assert(existsSync(`gh-pages-output${local}${local.endsWith('/')?'index.html':''}`),`Broken link: ${match[1]}`);
  }
  if(page==='people'){
-   const directory=html.split('<div class="member-list">')[1].split('<h2>'+translate('Director',lang))[0];
+   const directory=html.split('<div class="member-list">')[1].split('<h2>'+translate('Director of Integrated Power and Energy Systems Research Programme',lang))[0];
    assert(!directory.includes('<img'), 'Directory must not contain portraits');
    assert(!directory.includes('member-grid'));
    for(const m of teamMembers){assert(directory.includes(pageUrl('people/'+m.slug,lang,base)));assert(directory.includes(m.linkedin));}
    assert(!directory.includes(translate('Guitarist, singer-songwriter and producer.',lang)));
-   assert(html.indexOf('<h2>'+translate('Professor Cian Ó Mathúna',lang))>html.indexOf('<h2>'+translate('Team members',lang)));
+   assert(html.indexOf('id="cian-omathuna"')>html.indexOf('<h2>'+translate('Team members',lang)));
  }
  if(page.startsWith('people/')){const m=teamMembers.find(m=>'people/'+m.slug===page);assert(html.includes('/people/'+m.slug+'.png'));assert(html.includes(pageUrl('people',lang,base)));assert(html.includes(m.linkedin));assert(!html.includes('To be added'));}
 }
-console.log('Verified all 44 pages: language, direction, links, portrait-free directory and individual profiles.');
+console.log('Verified all exported pages: language, direction, links, portrait-free directory and individual profiles.');
