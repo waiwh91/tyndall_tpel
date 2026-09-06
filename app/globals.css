@@ -162,3 +162,8 @@ footer .institution-address{margin-top:20px}
 .founding-partners a:last-child{--ucc-height:54px;width:calc(var(--ucc-height) * 3.12);overflow:hidden;flex:none}
 .founding-partners a:last-child img{height:var(--ucc-height);width:auto;max-width:none;flex:none}
 @media(max-width:600px){.founding-partners a:last-child{--ucc-height:32px}}
+
+/* Align the institutional marks along a shared bottom edge. */
+.brand-signoff{align-items:flex-end}
+.brand-signoff .founding-partners{align-self:flex-end}
+.founding-partners>div{align-items:flex-end}
